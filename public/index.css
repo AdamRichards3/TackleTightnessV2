@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+	font-family: 'Nunito', sans-serif;
+	/* background-color: #DEE5E5; */
+}
+
+.sideNav{
+	height: 100%;
+	width: 60px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #17B890;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+.sideNav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #ffffff;
+	display: block;
+	align-items: center;
+}
+
+.sideNav a:hover{
+	color: #30fcc9;
+}
+
+.main{
+	margin-left: 100px;
+	padding: 0px 10px;
+}
