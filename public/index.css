@@ -4,6 +4,9 @@
 	font-family: 'Nunito', sans-serif;
 	/* background-color: #DEE5E5; */
 }
+h1 {
+	color: #17B890;
+}
 
 .sideNav{
 	height: 100%;
