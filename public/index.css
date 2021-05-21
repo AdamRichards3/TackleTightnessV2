@@ -37,3 +37,11 @@ h1 {
 	margin-left: 100px;
 	padding: 0px 10px;
 }
+
+.text-background{
+	background-color: #17B890;
+	color: #ffffff;
+	width: 40%;
+	padding: 10px;
+	border-radius: 15px;
+}
