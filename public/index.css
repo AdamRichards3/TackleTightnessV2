@@ -42,7 +42,7 @@ img {
 }
 
 .main{
-	margin-left: 50px;
+	margin-left: 80px;
 	padding: 0px 10px;
 }
 
@@ -56,7 +56,7 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-	width: 100%;
+	width: 80%;
 	position: relative;
 	margin: auto;
   }
