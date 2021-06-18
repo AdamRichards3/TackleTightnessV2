@@ -9,8 +9,8 @@ app.listen(PORT, (err) => {
 	console.log(`Server listening on http:/localhost:${PORT}`);
 });
 
-app.use(express.static('__durname'));
 app.use(express.static('public'));
+app.use(express.static('js'));
 
 app.get('/', function (req, res) {
     res.sendFile('index.html');

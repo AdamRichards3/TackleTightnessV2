@@ -3,107 +3,94 @@
 * {
 font-family: 'Nunito', sans-serif;
 box-sizing: border-box;
+margin: 0;
+padding: 0;
 }
 
-h1 {
-	color: #17B890;
-	font-size: 50px;
-}
-
-img {
-	overflow: hidden;
-	object-fit: cover;
-}
-
-.title{
-	text-align: center;
-}
-
-.sideNav{
-	height: 100%;
-	width: 60px;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	background-color: #17B890;
-	overflow-x: hidden;
-	padding-top: 20px;
-}
-
-.sideNav a {
-	padding: 6px 8px 6px 16px;
+li {
+	color: #000000;
+  }
+  /* This changes the style of the Nav bar  */
+  .navbar {
+	font-size: 18px;
+	padding-bottom: 10px;
+  }
+  /* This changes the strucutre of the Nav bar  */
+  .nav {
+	list-style-type: none;
+	display: none;
+  }
+  /* This changes the links inside the Nav bar  */
+  .nav-links, .logo {
 	text-decoration: none;
-	font-size: 25px;
-	color: #ffffff;
+	color: rgb(0, 0, 0);
+  }
+  /* Changes the Li inside the nav tag  */
+  .nav li {
+	text-align: center;
+	margin: 15px auto;
+  }
+  /* Changes the style of the logo */
+  .logo {
+	display: inline-block;
+	font-size: 22px;
+	margin-top: 10px;
+	margin-left: 20px;
+	color: #000000;
+  }
+  /* Changes what the Nav bar does once it has been pressed */
+  .navbar-toggle {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	cursor: pointer;
+	color: rgb(0, 0, 0);
+	font-size: 24px;
+  }
+  /* Changes the colour of the hover of the toggled nav bar  */
+  .navbar-toggle:hover{
+	color: rgb(73, 73, 73);
+	transition: all 0.3s ease 0s;
+  }
+  /* Change what the nav bar looks like once in mobile */
+  .active {
 	display: block;
-	align-items: center;
-}
-
-.sideNav a:hover{
-	color: #30fcc9;
-}
-
-.main{
-	margin-left: 80px;
-	padding: 0px 10px;
-}
-
-.text-background{
-	background-color: #17B890;
-	color: #ffffff;
-	width: 100%;
-	padding: 10px;
-	border-radius: 15px;
-	text-align: center;
-	margin-bottom: 15px;
-}
-
-.text-background p {
-	font-size: 20px;
-}
-
-/* This is for the cards in the middle */
-
-/* Float four columns side by side */
-.column {
-	float: left;
-	width: 25%;
-	padding: 0 10px;
   }
+  /* This changes the nav bar once is goes past the px limit */
+  @media screen and (min-width: 768px) {
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 0;
+		height: 70px;
+		align-items: center;
+	}
   
-  /* Remove extra left and right margins, due to padding */
-  .row {margin: 0 -5px;}
+	.nav {
+		display: flex;
+		margin-right: 30px;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
   
-  /* Clear floats after the columns */
-  .row:after {
-	content: "";
-	display: table;
-	clear: both;
-  }
+	.nav li {
+		margin: 0;
+	}
   
-  /* Responsive columns */
-  @media screen and (max-width: 600px) {
-	.column {
-	  width: 100%;
-	  display: block;
-	  margin-bottom: 20px;
+	.nav-links {
+		margin-left: 40px;
+	}
+  
+	.logo {
+		margin-top: 0;
+	}
+  
+	.navbar-toggle {
+		display: none;
+	}
+  
+	.logo:hover, .nav-links:hover {
+		color: rgb(73, 73, 73);
+		transition: all 0.3s ease 0s;
 	}
   }
-  
-  /* Style the counter cards */
-  .card {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	text-align: center;
-	background-color: #f1f1f1;
-	height: 100%;
-  }
-
-  .card p {
-	  padding-bottom: 16px;
-  }
-
-  .card img {
-	  border-bottom-left-radius: 10px;  
-	  border-bottom-right-radius: 10px;
-	}
