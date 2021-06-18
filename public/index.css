@@ -94,3 +94,18 @@ li {
 		transition: all 0.3s ease 0s;
 	}
   }
+  img{
+	object-fit: cover;
+  }
+  .background{
+	background-color: #3d3d3d;
+	opacity: 0.5;
+	position: relative;
+  }
+  .centre1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #ffffff;
+  }
