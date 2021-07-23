@@ -99,13 +99,12 @@ li {
   }
   .background{
 	background-color: #3d3d3d;
-	opacity: 0.5;
-	position: relative;
+	opacity: 0.7;
   }
   .centre1{
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	top: 40%;
+	left: 400px;
+	/* transform: translate(-50%, -50%); */
 	color: #ffffff;
   }
