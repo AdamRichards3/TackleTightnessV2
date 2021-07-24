@@ -98,13 +98,15 @@ li {
 	object-fit: cover;
   }
   .background{
-	background-color: #3d3d3d;
-	opacity: 0.7;
+	opacity: 0.8;
+	position: relative;
+	display: inline-block; /* Make the width of box same as image */
   }
-  .centre1{
+
+  .background .text {
 	position: absolute;
-	top: 40%;
-	left: 400px;
-	/* transform: translate(-50%, -50%); */
-	color: #ffffff;
-  }
+	top: 30%; /* Adjust this value to move the positioned div up and down */
+	text-align: center;
+	width: 50%; /* Will change the postion of the writing left-right */
+	color: white;
+}
