@@ -9,6 +9,7 @@ padding: 0;
 
 li {
 	color: #000000;
+	text-decoration: none;
   }
   /* This changes the style of the Nav bar  */
   .navbar {
@@ -110,3 +111,69 @@ li {
 	width: 50%; /* Will change the postion of the writing left-right */
 	color: white;
 }
+
+/* .index-container{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 2fr 60% 60%;
+	row-gap: 5px;
+}
+
+.item1{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 1;
+	background-color: aqua;
+	padding-left: 20px;
+}
+
+.item1 h2{
+	padding: 10px;
+}
+
+.item2{
+	grid-column-start: 1;
+	grid-column-end: 1;
+	grid-row-start: 2;
+	grid-row-end: 2;
+	background-color: yellow;
+} */
+.parent {
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	grid-template-rows: repeat(5, 5fr);
+	grid-column-gap: 5px;
+	grid-row-gap: 5px;
+	}
+	
+	.div1 { 
+		grid-area: 1 / 1 / 2 / 3; 
+		padding: 30px;
+	}
+	.div1 h2{
+		padding-bottom: 10px;
+		font-size: 30px;
+	}
+
+	.div2 { 
+		grid-area: 2 / 1 / 4 / 2; 
+		padding: 30px;
+		font-size: 20px;
+	}
+	.div2 p{
+		padding: 10px;
+	}
+	.div2 i{
+		padding-right: 10px;
+	}
+	.div3 { 
+		grid-area: 2 / 2 / 4 / 4; 
+	}
+	.div3 img{
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+	}
+	.div4 { 
+		grid-area: 4 / 1 / 6 / 3; 
+	}
