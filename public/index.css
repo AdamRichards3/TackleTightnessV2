@@ -116,7 +116,7 @@ li {
 .parent {
 	display: grid;
 	grid-template-columns: repeat(2, 50%);
-	grid-template-rows: repeat(5, 5fr);
+	grid-template-rows: repeat(6, 5fr);
 	grid-column-gap: 5px;
 	grid-row-gap: 5px;
 	}
@@ -143,11 +143,33 @@ li {
 	}
 	.div3 { 
 		grid-area: 2 / 2 / 4 / 4; 
+		padding-bottom: 50px;
 	}
 	.div3 img{
 		border-top-left-radius: 15px;
 		border-bottom-left-radius: 15px;
 	}
 	.div4 { 
-		grid-area: 4 / 1 / 6 / 3; 
+		grid-area: 4 / 1 / 5 / 3; 
+		position: relative;
+		display: inline-block;
+	}
+	.div4 img{
+		opacity: 0.8;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 15px;
+	}
+	.div4 .feedback{
+		position: absolute;
+		top: 40%; /* Adjust this value to move the positioned div up and down */
+		text-align: center;
+		width: 100%;
+		color: white;
+		font-size: 25px;
+	}
+	.div5{
+		grid-area: 5 / 1 / 7 / 3;
+		background-color: #252525;
 	}
